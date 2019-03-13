@@ -1,0 +1,20 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44301
+        }
+      ],
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/p/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Options", "Post", "Delete", "Put", "Patch" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44300",
+    "SkipSslValidation": true
+  }
+}

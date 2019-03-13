@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service_Domain", "Service_Domain", "{1FD5C46C-1742-474E-B04F-C1C0F311CF2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API_Gateway", "API_Gateway", "{ACB8BAC3-738C-461B-AE76-A221F729E272}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{D71AA3DB-9EAD-4D36-B212-0086DC5563F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client_Side", "Client_Side", "{6F1AF27A-222F-4B03-A0A3-C4D6AF9D5144}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Merchant_Collectors", "Merchant_Collectors", "{3142FD93-CD04-4D94-857C-8CB5519A29F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Share_Library", "Share_Library", "{FF37E288-1376-417F-89FB-16F76225D3AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service_Discovery", "Service_Discovery", "{5A65756F-F4B0-406D-94FA-455225DF578C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Message_Broker", "Message_Broker", "{6B818C3C-03B3-4A29-9438-454420AF968E}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {314FA7E1-D3C8-465C-B0DB-770E167142F6}
+	EndGlobalSection
+EndGlobal
