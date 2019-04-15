@@ -20,6 +20,8 @@
 		2.2 Footer
 	3. Components
 		3.1 Buttons
+		3.2 Grid
+		3.1 Tab
 	4. Pages
 		4.1 Home page
 	5. Themes
@@ -59,7 +61,8 @@
  */
 /* --------------------- 3.1 Buttons --------------------- */ 
 @import 'components/button';
-
+@import 'components/grid';
+@import 'components/tab';
 
 
 /**
