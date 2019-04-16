@@ -1,9 +1,9 @@
 This project was bootstrapped base on some libraries as below
 
-1/  Create React App support typescript (https://github.com/facebook/create-react-app)
-2/  build and deloy with Webpack 4 (https://github.com/webpack/webpack)
-3/  styling with SCSS and HTML 5 boiler template (https://github.com/kingRayhan/html5-scss-boilerplate)
-4/  testing with .....
+- Create React App support typescript (https://github.com/facebook/create-react-app)
+- Build and deloy with Webpack 4 (https://github.com/webpack/webpack)
+- Styling with SCSS and HTML 5 boiler template (https://github.com/kingRayhan/html5-scss-boilerplate)
+- Testing with .....
 
 
 ## Table of Contents
