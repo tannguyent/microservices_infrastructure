@@ -4,17 +4,23 @@ import Loader from './common/loader'
 
 import ErrorBoundary from './common/error-boundary'
 
+import Header from './common/page/header'
+
+import Footer from './common/page/footer'
+
+
+import Mailing from './common/page/mailing'
+
+
 class App extends React.Component {
   public render() {
     return (
       <div className="App">
         <ErrorBoundary>
-          <header className="App-header">
-            <h1 className="App-title">Welcome to React Application</h1>
-          </header>
-          <p className="App-intro">
-            <Loader />
-          </p>
+          <Header />
+          <Loader />
+          <Mailing />
+          <Footer />
         </ErrorBoundary>
       </div>
     );

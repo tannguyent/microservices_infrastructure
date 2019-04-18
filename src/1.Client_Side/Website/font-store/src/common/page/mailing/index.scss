@@ -1,0 +1,59 @@
+.mailing-list {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 4.625rem;
+    .mailing-list-content {
+        background: #f9f9f9;
+        padding: 4.625rem 1.875rem;
+    }
+
+    h2{
+        font-size: 3rem;
+        line-height: 3.625rem;
+        font-weight: 200;
+        line-height: .9;
+        margin-bottom: .25em;
+        margin-top: .25em;
+    }
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 29rem;
+    }
+
+    .newsletter-form {
+        display: flex;
+        margin: .9375rem auto 0;
+        max-width: 48.125rem;
+    }
+
+    input {
+        border: 3px solid #fff;
+        flex-grow: 1;
+        margin: 0;
+        min-height: 5rem;
+        padding: .9375rem 1.875rem;
+        width: inherit;
+
+        &:focus {
+            border-color: #9f9fae;
+        }
+    }
+
+    .submit {
+        margin: 1.875rem auto 0;
+    }
+}
+
+@media (max-width: 52.8125em) {
+    .mailing-list .newsletter-form {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 52.875em) {
+    .mailing-list .submit {
+        flex: 0 0 15rem;
+        margin: 0;
+    }
+}

@@ -1,7 +1,8 @@
 // Grid breakpoints
 //
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
