@@ -2,6 +2,8 @@ import * as React from 'react'
 
 import './index.scss'
 
+const MISSING_ERROR = 'Error was swallowed during propagation.';
+
 // presentation component
 const Fallback = React.memo((props) => {
     return (
@@ -13,13 +15,14 @@ const Fallback = React.memo((props) => {
 
 // container component 
 export default class extends React.Component {
-    state = { hasError: false, error: null };
+    state = { error: null };
   
-    static getDerivedStateFromError(error: string) {
-      return { hasError: true, error };
-    }
+	componentDidCatch(error: Error | null, info: object) {
+		this.setState({ error: error || new Error(MISSING_ERROR) });
+	}
+
   
     render() {
-      return this.state.hasError ? <Fallback /> : this.props.children;
+      return this.state.error ? <Fallback /> : this.props.children;
     }
   }

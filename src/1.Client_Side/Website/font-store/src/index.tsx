@@ -8,7 +8,9 @@ import '../styles/style.scss';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <App />,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('app') as HTMLElement
 );
 registerServiceWorker();

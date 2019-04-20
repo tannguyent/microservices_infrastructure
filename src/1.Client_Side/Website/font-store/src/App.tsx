@@ -1,5 +1,9 @@
 import * as React from 'react';
 
+import { BrowserRouter } from 'react-router-dom';
+
+import Routes from './route';
+
 import Loader from './common/loader'
 
 import ErrorBoundary from './common/error-boundary'
@@ -8,21 +12,20 @@ import Header from './common/page/header'
 
 import Footer from './common/page/footer'
 
-
-import Mailing from './common/page/mailing'
-
-
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <ErrorBoundary>
-          <Header />
-          <Loader />
-          <Mailing />
-          <Footer />
-        </ErrorBoundary>
-      </div>
+      <React.Suspense fallback={<Loader />}>
+        <BrowserRouter>
+          <ErrorBoundary>
+            <React.Fragment>
+              <Header />
+              <Routes />
+              <Footer />
+            </React.Fragment>
+          </ErrorBoundary>
+        </BrowserRouter>
+      </React.Suspense>
     );
   }
 }
